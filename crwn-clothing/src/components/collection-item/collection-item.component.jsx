@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
+import CustomButton from '../custom-button/custom-button.component';
+
 import './collection-item.styles.scss';
 
 const CollectionItem = ({
@@ -17,6 +19,7 @@ const CollectionItem = ({
       <span className="name">{name}</span>
       <span className="price">{price}</span>
     </div>
+    <CustomButton inverted> Add to Cart </CustomButton>
   </div>
 );
 
